@@ -66,16 +66,13 @@ export default function Home() {
         {/* weekly deals  */}
         <div className="">
           <div className="lg:w-[80%] mx-auto py-[40px] xl:py-[100px] ">
-            <div className="mx-[5%] ">
-              <div className="lg:text-xl font-thin">
-                Featured
-              </div>
-              <div className="text-[30px] xl:text-[60px]">
-                Weekly Deals
-              </div>
+            <div className="lg:text-xl font-thin">
+              Featured
             </div>
-            <div className="flex flex-wrap justify-evenly items-center my-[20px] md
-          3:my-[50px]">
+            <div className="text-[30px] xl:text-[60px]">
+              Weekly Deals
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px] my-[30px] md:my-[50px]">
               {
                 Deals.map((value, index) => {
                   return <DealsBox bg={value.bg} title={value.title} price={value.price} key={index} />
@@ -120,8 +117,8 @@ export default function Home() {
           </div>
         </div>
         {/* Benifits with us  */}
-        <div className="bg-white p-5">
-          <div className="lg:w-[80%] mx-auto grid lg:grid-cols-4 lg:my-[50px] *:py-5">
+        <div className="bg-white md:my-[100px]">
+          <div className="lg:w-[80%] mx-auto grid lg:grid-cols-4 *:py-5">
             {
               benifits.map((item, index) => {
                 return (

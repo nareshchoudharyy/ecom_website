@@ -1,12 +1,16 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { SlHandbag } from "react-icons/sl";
 import { BsSearch } from "react-icons/bs";
 import { FaAngleRight } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
+import Sidemenu from './Sidemenu';
 
 function Header1() {
+
+    const [isMenu, setMenu] = useState(false);
     return (
         <>
             <div className='flex justify-between lg:px-[10%] *:p-3 bg-[#f4ecec] sticky top-0 left-0 z-10'>
@@ -26,9 +30,10 @@ function Header1() {
                         <div className='flex items-center gap-4 text-xl *:cursor-pointer'>
                             <SlHandbag />
                             <BsSearch />
-                            <IoMenu className='text-2xl' />
+                            <IoMenu className='text-2xl' onClick={() => { setMenu(!isMenu) }} />
                         </div>
                     </div>
+                    <Sidemenu isMenu={isMenu} setMenu={setMenu}/>
                     <div className='hidden lg:block'>
                         <ul className='flex items-center gap-4 *:border-white *:border-b *:p-2 *:transition *:duration-0 *:hover:duration-300 text-[15px] text-[#575757] font-medium'>
                             <Link className='hover:border-black hover:text-black ' href={'/'}>

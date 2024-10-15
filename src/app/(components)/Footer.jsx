@@ -29,7 +29,7 @@ function Footer() {
                     <div className='p-2'>
                         <h4 className='text-[16px] my-4 font-bold'>Delivery</h4>
                         <div>
-                            <ul className='text-[#b59e8d] text-sm *:my-2 list-disc'>
+                            <ul className='text-[#b59e8d] text-sm *:my-2 *:cursor-pointer list-disc'>
                                 <li className='hover:underline'>How it Works</li>
                                 <li className='hover:underline'>Free Delivery</li>
                                 <li className='hover:underline'>FAQ</li>
@@ -41,7 +41,7 @@ function Footer() {
                     <div className='p-2'>
                         <h4 className='text-[16px] my-4 font-bold'>Customer service</h4>
                         <div>
-                            <ul className='text-[#b59e8d] text-sm *:my-2 list-disc'>
+                            <ul className='text-[#b59e8d] text-sm *:my-2 *:cursor-pointer list-disc'>
                                 <li className='hover:underline'>Orders</li>
                                 <li className='hover:underline'>Downloads</li>
                                 <li className='hover:underline'>Addresses</li>
@@ -55,7 +55,7 @@ function Footer() {
                         <h4 className='text-[16px] my-4 font-bold'>Useful links
                         </h4>
                         <div>
-                            <ul className='text-[#b59e8d] text-sm *:my-2 list-disc'>
+                            <ul className='text-[#b59e8d] text-sm *:my-2 *:cursor-pointer list-disc'>
                                 <li className='hover:underline'>Contact us</li>
                                 <li className='hover:underline'>Help & About us</li>
                                 <li className='hover:underline'>Shipping & Returns</li>
@@ -70,7 +70,7 @@ function Footer() {
                 <div>
                     © 2024 Betheme by <a href='https://github.com/nareshchoudharyy' target='_blank' className='hover:underline'>Naresh Choudhary</a> | All Rights Reserved | Powered by NextJs
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-5'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-5 *:cursor-pointer'>
                     <div className='hover:underline'>Terms and conditions</div>
                     <div className='hover:underline'>Privacy policy</div>
                     <div className='hover:underline'>Cookies</div>

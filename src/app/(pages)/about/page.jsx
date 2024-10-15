@@ -62,12 +62,12 @@ function page() {
                     <div className='text-[20px] '>Country Covered</div>
                 </div>
                 <div>
-                    <div className='text-[60px] font-bold'>5+</div>
-                    <div className='text-[20px] '>Millons Happy Customers</div>
+                    <div className='text-[60px] font-bold'>5M+</div>
+                    <div className='text-[20px] '>Happy Customers</div>
                 </div>
                 <div>
-                    <div className='text-[60px] font-bold'>50+</div>
-                    <div className='text-[20px] '>Millons Products Listed</div>
+                    <div className='text-[60px] font-bold'>50M+</div>
+                    <div className='text-[20px] '>Products Listed</div>
                 </div>
             </div>
             <Benifits2 />

@@ -4,7 +4,7 @@ import { FaChevronRight } from "react-icons/fa6";
 
 function Benifits2() {
     return (
-        <div className="bg-white mb-[100px]">
+        <div className="bg-white md:my-[100px]">
             <div className="lg:w-[80%] mx-auto grid place-items-center sm:grid-cols-3">
                 <div className=" max-w-[406px]">
                     <Image src={'https://themes.muffingroup.com/be/clothing2/wp-content/uploads/2020/07/clothing2-wrapbg1.jpg'} width={0}
