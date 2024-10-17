@@ -47,7 +47,7 @@ function page() {
                     </div>
                     <div className="col-span-5 md:col-span-3" >
                         <Image src={'https://themes.muffingroup.com/be/clothing2/wp-content/uploads/2020/07/clothing2-about-pic1.jpg'} width={0}
-                            height={0}
+                            height={0} alt=""
                             sizes="100vw" style={{ width: '80%', height: 'auto' }} unoptimized className="mx-auto" />
                     </div>
                 </div>

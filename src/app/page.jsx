@@ -9,6 +9,7 @@ import { Open_Sans } from 'next/font/google'
 import Footer from "./(components)/Footer";
 import Benifits2 from "./(components)/Benifits2";
 import Head from "next/head";
+import Link from "next/link";
 const opensens = Open_Sans({ subsets: ['latin'] })
 export default function Home() {
   const Deals = [
@@ -80,9 +81,11 @@ export default function Home() {
               }
             </div>
             <div className="flex items-center justify-around">
-              <div className="bg-black text-white p-[10px_15px] flex items-center justify-between gap-3 cursor-pointer">
-                See all products <span> <FaChevronRight /> </span>
-              </div>
+              <Link href='/shop'>
+                <div className="bg-black text-white p-[10px_15px] flex items-center justify-between gap-3 cursor-pointer">
+                  See all products <span> <FaChevronRight /> </span>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -109,9 +112,11 @@ export default function Home() {
                 Fusce ut velit laoreet, tempus arcu eu, molestie tortor. For even just a course, the palate needs the food, the eros needs. Maecenas was eleifend but just fringilla invest it and big eu, molestie tortor lorem eget egesta.
               </div>
               <div className="flex items-center justify-around">
-                <div className="bg-black text-white p-[10px_15px] flex items-center justify-between gap-3 cursor-pointer">
-                  See all products <span> <FaChevronRight /> </span>
-                </div>
+                <Link href={'/about'}>
+                  <div className="bg-black text-white p-[10px_15px] flex items-center justify-between gap-3 cursor-pointer">
+                    More About Us <span> <FaChevronRight /> </span>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -124,7 +129,7 @@ export default function Home() {
                 return (
                   <div className="p-2 text-center max-w-[300px] mx-auto " key={index}>
                     <div>
-                      <Image src={item.image} className="mx-auto" width={40} height={40} unoptimized />
+                      <Image src={item.image} alt="" className="mx-auto" width={40} height={40} unoptimized />
                     </div>
                     <div className="font-thin text-2xl my-2">
                       {item.title}

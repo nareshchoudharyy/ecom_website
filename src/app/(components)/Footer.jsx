@@ -13,7 +13,7 @@ function Footer() {
             <div className="lg:w-[80%] mx-auto px-[20px] lg:p-0">
                 <div className='py-[50px] lg:py-[100px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center lg:place-items-stretch '>
                     <div className='flex flex-col justify-evenly'>
-                        <Image width="200" height='200' unoptimized src="https://themes.muffingroup.com/be/clothing2/wp-content/uploads/2020/07/retina-clothing2.png" />
+                        <Image width="200" height='200' alt="" unoptimized src="https://themes.muffingroup.com/be/clothing2/wp-content/uploads/2020/07/retina-clothing2.png" />
                         <div className={`${dmSens.className} flex items-center text-xl font-extralight gap-3`}>
                             <FaPhone />
                             <a href='mob:1234567890'> +61 (0) 383 766 284</a>

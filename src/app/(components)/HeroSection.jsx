@@ -1,9 +1,5 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react'
-import FancyHeader from './FancyHeader';
-import { FaPhone } from "react-icons/fa";
-import { MdOutlineAttachEmail } from "react-icons/md";
-import Header1 from './Header1';
 import { Roboto } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -13,30 +9,6 @@ const roboto = Roboto({
 });
 
 function HeroSection() {
-    // const headerRef = useRef(null);
-    // const [showHeader, setShowHeader] = useState(false);
-    // const [headerHeight, setHeaderHeight] = useState(0);
-    // useEffect(() => {
-    //     console.log(headerRef)
-    //     setHeaderHeight(headerRef.offsetHeight);
-    //     const handleScroll = () => {
-    //         const scrollPosition = window.scrollY;
-    //         console.log('scrollPosition', scrollPosition)
-    //         console.log('header height', headerRef.offsetHeight)
-    //         if (scrollPosition > headerHeight) {
-    //             setShowHeader(true);
-    //         } else {
-    //             setShowHeader(false);
-    //         }
-    //         console.log('showHeader', showHeader)
-    //     }
-
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, [])
-
     const [sliders, setSliders] = useState([
         {
             bg: 'https://themes.muffingroup.com/be/clothing2/wp-content/uploads/2020/07/clothing2-slider-pic1-1.jpg'

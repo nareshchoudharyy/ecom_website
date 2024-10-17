@@ -16,10 +16,10 @@ const dmSens = DM_Sans({
 function DealsBox({ bg, title, price }) {
     return (
         <>
-            <div className='border border-black'>
+            <div>
                 <div className="h-[240px] overflow-hidden relative group">
                     <Image src={bg} width={0}
-                        height={0}
+                        height={0} alt=""
                         sizes="100vw"
                         style={{ width: '100%', height: 'auto' }} unoptimized className=" hover:scale-125 duration-300" />
                     <div className="*:bg-black *:p-3 text-[30px] text-white flex gap-2 absolute top-[40%] left-[30%] duration-300 scale-0 group-hover:scale-100">
